@@ -1,0 +1,47 @@
+<section>
+	<div id="newsletter" class="visible">
+		<div class="container">	
+			<div class="row">
+				<div class="col l8 offset-l2 m12 offset-m0 s12">
+					<article class="card white">
+						<h3> Processo Seletivo 2015.1 </h3>
+					</article>
+					<article class="card white">
+							<div id="mc_embed_signup">
+						      <%= form_for(@candidate) do |f| %>
+									  <div class="field">
+									    <%= f.text_field :name, placeholder: "Nome"  %>
+									  </div><br>
+									  <div class="field">
+									    <%= f.text_field :phone, placeholder: "Telefone"  %>
+									  </div><br>
+									  <div class="field">
+									    <%= f.text_field :email, placeholder: "Email"  %>
+									  </div><br>
+									  <div class="field">
+									    <%= f.text_field :register, placeholder: "Matricula"  %>
+									  </div><br>
+									  <br>
+
+									  <div class="fileUpload btn btn-lg btn-primary btn-block">
+									    <span>Curriculo</span>
+									    	<%= f.file_field :resume, class: "upload" %>
+									    <i class="fa fa-cloud-upload"></i>
+										</div>
+										<br>
+
+									  <div class="actions">
+									    <button type="submit" class=" right btn btn-lg btn-primary btn-block">Enviar</button>
+									  </div>
+									<% end %>
+							</div>
+					</article>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="down visible" data-destination="#what"></div>
+</section>
+
+
+
