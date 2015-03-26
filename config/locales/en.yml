@@ -19,5 +19,31 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+en:  
+  activerecord:
+    models:
+      candidate: "Candidato"
+    attributes:
+      candidate:
+        name: "Nome"
+        email: "E-mail"
+        phone: "Telefone"
+        register: "Matrícula"
+        resume: "Currículo"
+        history: "Histórico"
+    errors:
+      models:
+        candidate:
+          attributes:
+            name:
+              blank: "Preenche este nome direito"
+            email:
+              blank: "Esqueçeu o e-mail oO?"
+            phone:
+              blank: "Cadê o numero do telefone?"
+            register:
+              blank: "Não importa se tem zero, só escreve aí tua matrícula"
+            resume:
+              blank: "Bora enviar esse currículo, vai lá dar o upload"
+            history:
+              blank: "Corre lá no siga e pega o teu histórico, aí faz o upload =)"
