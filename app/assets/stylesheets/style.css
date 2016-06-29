@@ -92,6 +92,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #63b4bc;
 }
 
+.gti-purple {
+  background-color: #6650aa;
+}
+
+.gti-icons {
+  color: #606060;
+}
+
 /* Materialize styles override */
 /* label color */
   .input-field label {
