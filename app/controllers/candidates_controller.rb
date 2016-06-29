@@ -28,9 +28,9 @@ class CandidatesController < ApplicationController
 
     respond_to do |format|
       if @candidate.save
-        format.html { redirect_to root_path, notice: 'Obrigado pela candidatura' }
+        format.html { redirect_to root_path, notice: 'Tudo OK! Obrigado pela inscrição!' }
       else
-        format.html { redirect_to root_path, alert: 'Erro, preencha com cuidado'  }
+        format.html { redirect_to root_path, alert: 'Erro. Preencha com cuidado.'  }
       end
     end
   end
