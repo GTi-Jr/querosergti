@@ -1,6 +1,6 @@
 <section>
 	<div id="newsletter" class="visible">
-		<div class="container">	
+		<div class="container">
 			<div class="row">
 					<div class="col l8 offset-l2 m12 offset-m0 s12">
 					<article class="card white tooltipped" data-position="left" data-delay="50" data-tooltip="Bem Vindo">
@@ -24,7 +24,7 @@
 									  </div><br>
 									  <br>
 
-									  <div class="fileUpload btn btn-lg btn-primary btn-block">
+									  <div class="fileUpload btn btn-lg btn-primary btn-block gti-cyan">
 									    <span>Curriculo</span>
 									    	<%= f.file_field :resume, class: "upload", onchange: "resume(this)"%>
 									    <i id="resume_i" class="fa fa-cloud-upload"></i>
@@ -32,7 +32,7 @@
 										<br>
 
 
-									  <div class="fileUpload btn btn-lg btn-primary btn-block tooltipped" data-position="right" data-delay="50" data-tooltip="Para quem é do primeiro ano relaxe, não levamos em conta as notas">
+									  <div class="fileUpload btn btn-lg btn-primary btn-block tooltipped gti-cyan" data-position="right" data-delay="50" data-tooltip="Para quem é do primeiro ano relaxe, não levamos em conta as notas">
 									    <span>Histórico</span>
 									    	<%= f.file_field :history, class: "upload", onchange: "history(this)" %>
 									    <i id="history_i" class="fa fa-cloud-upload"></i>
@@ -41,7 +41,7 @@
 
 
 									  <div class="actions tooltipped" data-position="bottom" data-delay="50" data-tooltip="Você está certo desta resposta?">
-									    <button type="submit" class=" right btn btn-lg btn-primary btn-block">Enviar</button>
+									    <button type="submit" class=" right btn btn-lg btn-primary btn-block gti-cyan">Enviar</button>
 									  </div>
 									<% end %>
 							</div>
@@ -56,7 +56,7 @@
 					</article>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div class="down visible" data-destination="#what"></div>
 </section>
@@ -66,6 +66,3 @@
     $('.tooltipped').tooltip({delay: 50});
   });
 </script>
-
-
-
