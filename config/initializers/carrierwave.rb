@@ -1,8 +1,8 @@
 CarrierWave.configure do |config|
   config.fog_credentials = {
     provider:              'AWS',                        # required
-    aws_access_key_id:     'AKIAI4EQJKNLUOXTH6QQ',                        # required
-    aws_secret_access_key: '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',                        # required
+    aws_access_key_id:     ENV['AWS_ACCESS_KEY_ID'],     # required
+    aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'], # required
   }
-  config.fog_directory  = 'project.gti'                          # required
+  config.fog_directory  = 'project.gti'                  # required
 end
