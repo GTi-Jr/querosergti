@@ -19,7 +19,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:  
+en:
   activerecord:
     models:
       candidate: "Candidato"
@@ -36,14 +36,14 @@ en:
         candidate:
           attributes:
             name:
-              blank: "Preenche este nome direito"
+              blank: "Esquece do nome não."
             email:
-              blank: "Esqueçeu o e-mail oO?"
+              blank: "Esqueçeu o e-mail? :/"
             phone:
-              blank: "Cadê o numero do telefone?"
+              blank: "Cadê teu numero de telefone?"
             register:
-              blank: "Não importa se tem zero, só escreve aí tua matrícula"
+              blank: "Bota aí tua matrícula. :)"
             resume:
-              blank: "Bora enviar esse currículo, vai lá dar o upload"
+              blank: "Bora enviar esse currículo! Faz o upload aí. o/"
             history:
-              blank: "Corre lá no siga e pega o teu histórico, aí faz o upload =)"
+              blank: "Corre lá no SIGAA e pega o teu histórico e faz aí o upload :D"
