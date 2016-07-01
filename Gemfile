@@ -31,6 +31,7 @@ gem 'bootstrap-tooltip-rails'
 
 gem 'toastr-rails', '~> 1.0.3'
 
+gem 'letter_opener', group: :development
 
 group :development, :test do
   gem 'sqlite3'

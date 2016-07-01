@@ -2,16 +2,19 @@ class CandidateMailer < ActionMailer::Base
   layout 'mailer'
   default from: "gtiengenhariajr@gmail.com"
 
+  add_template_helper(CandidatesHelper)
+
   def confirm_inscription(candidate)
-    set_user(candidate)
-    @attrs = columns
+    set_candidate(candidate)
+    @attrs   = columns
+    @columns = humanized_columns
 
     mail to: @candidate.email, subject: 'Inscrição realizada com sucesso!'
   end
 
 private
 
-  def set_user(candidate)
+  def set_candidate(candidate)
     @candidate = candidate
   end
 
@@ -19,6 +22,10 @@ private
     cols = Candidate.columns.map { |c| c.name }
     excluded_columns.each { |c| cols.delete(c) }
     cols
+  end
+
+  def humanized_columns
+    columns.map { |c| Candidate.human_attribute_name(c) }
   end
 
   def excluded_columns
