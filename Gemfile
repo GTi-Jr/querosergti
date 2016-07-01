@@ -25,7 +25,7 @@ gem "font-awesome-rails"
 
 gem "fog"
 
-gem "carrierwave-aws"
+gem "carrierwave"
 
 gem 'bootstrap-tooltip-rails'
 
