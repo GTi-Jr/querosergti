@@ -31,7 +31,7 @@ class CandidatesController < ApplicationController
         CandidateMailer.confirm_inscription(@candidate)
         format.html { redirect_to root_path, notice: 'Obrigado pela inscrição!' }
       else
-        format.html { redirect_to root_path, alert: 'Erro. Preencha com cuidado.'  }
+        format.html { render :new, alert: 'Erro. Preencha com cuidado.'  }
       end
     end
   end
