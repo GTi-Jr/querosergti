@@ -1,0 +1,8 @@
+<h3><%= "#{greeting}, #{user.first_name}!" %></h3>
+
+<p>Sua incrição no processo seletivo da GTi foi confirmado!</p>
+<p>Se houver algum dado seu errado, entrar em contato conosco. :)</p>
+
+<% @attrs.each do |attr| %>
+  <%= "#{attr}: #{@user.send(attr)}" %> <br>
+<% end %>

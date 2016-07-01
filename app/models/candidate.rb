@@ -9,4 +9,10 @@ class Candidate < ActiveRecord::Base
   validates :register, :presence => true
   validates :resume, :presence => true
   validates :history, :presence => true
+
+  scope :novatos, -> { select { register[0..1].to_i == Time.now.year - 1978 } }
+
+  def first_name
+    name.split(' ').first
+  end
 end

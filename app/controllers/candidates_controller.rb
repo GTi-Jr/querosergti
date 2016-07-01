@@ -28,7 +28,8 @@ class CandidatesController < ApplicationController
 
     respond_to do |format|
       if @candidate.save
-        format.html { redirect_to root_path, notice: 'Tudo OK! Obrigado pela inscrição!' }
+        CandidateMailer.confirm_inscription(@candidate)
+        format.html { redirect_to root_path, notice: 'Obrigado pela inscrição!' }
       else
         format.html { redirect_to root_path, alert: 'Erro. Preencha com cuidado.'  }
       end
