@@ -21,6 +21,10 @@ class DocumentsUploader < CarrierWave::Uploader::Base
     storage :file
   end
 
+  def extension_white_list
+    %w(pdf doc docx)
+  end
+
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
   #   # For Rails 3.1+ asset pipeline compatibility:

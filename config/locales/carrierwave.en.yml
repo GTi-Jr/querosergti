@@ -1,0 +1,8 @@
+en:
+  errors:
+    messages:
+      carrierwave_processing_error: ": Não foi possível redimensionar imagem."
+      carrierwave_integrity_error: ": Não é uma imagem."
+      carrierwave_download_error: ": Não foi possível fazer download da imagem."
+      extension_white_list_error: ": O formato %{extension} não é permitido. Formatos suportados: %{allowed_types}"
+      extension_black_list_error: ": O formato %{extension} não é permitido. Formatos proibidos: %{prohibited_types}"

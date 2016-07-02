@@ -36,14 +36,14 @@ en:
         candidate:
           attributes:
             name:
-              blank: "Esquece do nome não."
+              blank: 'em branco.'
             email:
-              blank: "Esqueçeu o e-mail? :/"
+              blank: 'em branco'
             phone:
-              blank: "Cadê teu numero de telefone?"
+              blank: 'em branco'
             register:
-              blank: "Bota aí tua matrícula. :)"
+              blank: 'em branco'
             resume:
-              blank: "Bora enviar esse currículo! Faz o upload aí. o/"
+              blank: 'em branco'
             history:
-              blank: "Corre lá no SIGAA e pega o teu histórico e faz aí o upload :D"
+              blank: 'em branco'

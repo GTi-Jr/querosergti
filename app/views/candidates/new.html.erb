@@ -8,6 +8,18 @@
 						<h3> Processo Seletivo 2016.1 </h3>
 					</article>
 
+					<% if @candidate.errors.any? %>
+						<article class="card white">
+							<div class="left-align red-text">
+								<ul>
+									<% @candidate.errors.full_messages.each do |msg| %>
+										<li>- <%= msg %></li>
+									<% end %>
+								</ul>
+							</div>
+						</article>
+					<% end %>
+
 					<article class="card white">
 							<div id="mc_embed_signup">
 						      <%= form_for(@candidate) do |f| %>
@@ -46,6 +58,7 @@
 									<% end %>
 							</div>
 					</article>
+
 					<article class="card white">
 						<div class="left gti-icons">Desenvolvido com ❤ pela GTi</div>
 						<div class="right">
