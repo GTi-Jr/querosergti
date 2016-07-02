@@ -1,7 +1,12 @@
 <h3><%= "#{greeting}, #{@candidate.first_name}!" %></h3>
 
 <p>Sua incrição no processo seletivo da GTi foi confirmado!</p>
-<p>Se houver algum dado seu errado, entrar em contato conosco. :)</p>
+<p>Se houver algum dado seu errado ou qualquer dúvida em relação ao processo seletivo, sinta-se livre para entrar em contato conosco. :)</p>
+<p>Nossos contatos no Telegram são: <br>
+  Sara Lonngren   - @saralonngren <br>
+  Caio Ergos      - @caioeps <br>
+  Rodrigo Noronha - @rodrigotn <br>
+  Talles Félix    - @tallitos</p>
 
 <% @attrs.each_with_index do |attr, index| %>
   <%= "#{@columns[index]}: #{@candidate.send(attr)}" %> <br>

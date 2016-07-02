@@ -1,7 +1,11 @@
 class CandidateMailer < ActionMailer::Base
+  include SendGrid
+
   layout 'mailer'
+
   default from: "gtiengenhariajr@gmail.com"
 
+  # Me permite usar o helper
   add_template_helper(CandidatesHelper)
 
   def confirm_inscription(candidate)
