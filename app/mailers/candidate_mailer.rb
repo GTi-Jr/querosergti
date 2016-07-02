@@ -1,6 +1,4 @@
 class CandidateMailer < ActionMailer::Base
-  include SendGrid
-
   layout 'mailer'
 
   default from: "gtiengenhariajr@gmail.com"
