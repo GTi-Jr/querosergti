@@ -33,6 +33,8 @@ gem 'toastr-rails', '~> 1.0.3'
 
 gem 'letter_opener', group: :development
 
+gem 'sendgrid'
+
 group :development, :test do
   gem 'sqlite3'
 end
