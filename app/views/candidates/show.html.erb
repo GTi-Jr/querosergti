@@ -1,0 +1,5 @@
+<h3><%= "#{greeting}, #{@candidate.first_name}!" %></h3>
+
+<% @attrs.each_with_index do |attr, index| %>
+  <%= "#{@columns[index]}: #{@candidate.send(attr)}" %> <br>
+<% end %>

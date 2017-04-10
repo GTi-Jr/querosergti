@@ -1,0 +1,85 @@
+<section>
+	<div id="newsletter" class="visible">
+		<div class="container">
+			<div class="row">
+					<div class="col l8 offset-l2 m12 offset-m0 s12">
+					<article class="card white tooltipped" data-position="left" data-delay="50" data-tooltip="Bem Vindo">
+						<%= image_tag 'gti.png' %>
+						<h3> Processo Seletivo 2017.1 </h3>
+					</article>
+
+					<% if @candidate.errors.any? %>
+						<article class="card white">
+							<div class="left-align red-text">
+								<ul>
+									<% @candidate.errors.full_messages.each do |msg| %>
+										<li>- <%= msg %></li>
+									<% end %>
+								</ul>
+							</div>
+						</article>
+					<% end %>
+
+					<article class="card white">
+							<div id="mc_embed_signup">
+						      <%= form_for(@candidate) do |f| %>
+									  <div class="field tooltipped" id="name" data-position="bottom" data-delay="50" data-tooltip="Nome completo">
+									    <%= f.text_field :name, placeholder: "Nome"  %>
+									  </div><br>
+									  <div class="field tooltipped" data-position="bottom" data-delay="50" data-tooltip="(99)99999-9999">
+									    <%= f.text_field :phone, placeholder: "Telefone", class: 'phone_field'  %>
+									  </div><br>
+									  <div class="field tooltipped" data-position="bottom" data-delay="50" data-tooltip="Iremos enviar spam. Ou não... Ou sim...">
+									    <%= f.text_field :email, placeholder: "Email"  %>
+									  </div><br>
+									  <div class="field tooltipped" data-position="bottom" data-delay="50" data-tooltip="Com ou sem zero, aí é contigo :p">
+									    <%= f.text_field :register, placeholder: "Matricula", class: 'register_field'  %>
+									  </div><br>
+									  <br>
+
+									  <div class="fileUpload btn btn-lg btn-primary btn-block gti-cyan">
+									    <span>Curriculo</span>
+									    	<%= f.file_field :resume, class: "upload", onchange: "resume(this)"%>
+									    <i id="resume_i" class="fa fa-cloud-upload"></i>
+										</div>
+										<br>
+
+
+									  <div class="fileUpload btn btn-lg btn-primary btn-block tooltipped gti-cyan" data-position="right" data-delay="50" data-tooltip="Para quem é do primeiro ano, relaxa. Não levamos em conta as notas. :)">
+									    <span>Histórico</span>
+									    	<%= f.file_field :history, class: "upload", onchange: "history(this)" %>
+									    <i id="history_i" class="fa fa-cloud-upload"></i>
+										</div>
+										<br>
+
+									  <div class="actions tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tá tudo ok? Pois simbora! :)">
+									    <button type="submit" class="btn btn-lg btn-primary btn-block gti-purple">Enviar</button>
+									  </div>
+									<% end %>
+							</div>
+					</article>
+
+					<article class="card white">
+						<div class="left gti-icons">Desenvolvido com ❤ pela GTi</div>
+						<div class="right">
+							<a href="https://www.facebook.com/gti.ufc">
+								<i class="fa fa-facebook-square fa-2x gti-icons"></i>
+							</a>
+							<a href="http://gti.ufc.br">
+								<i class="fa fa-globe fa-2x gti-icons"></i>
+							</a>
+						</div>
+
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="down visible" data-destination="#what"></div>
+</section>
+
+<script>
+ $(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+  });
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QueroSerGTi</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<% if !flash[:alert].blank? %>
+	<%= toastr(flash[:alert], "error") %>
+<% end %>
+<% if !flash[:notice].blank? %>
+	<%= toastr(flash[:notice], "success") %>
+<% end %>
+
+</body>
+</html>
