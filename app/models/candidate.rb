@@ -10,7 +10,11 @@ class Candidate < ActiveRecord::Base
   validates :register, presence: true, length: { is: 6 }
   validates :resume, presence: true
   validates :history, presence: true
+
   # validate  :valid_email
+
+  validate  :valid_email
+
 
   # Callbacks
   after_save :send_confirmation_email
