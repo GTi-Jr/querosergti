@@ -31,6 +31,6 @@ private
 
   # Validation methods
   def valid_email
-    errors.add(:email, 'deve ter formato válido') if email =~ /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+    errors.add(:email, 'deve ter formato válido') if :email =~ /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
   end
 end
