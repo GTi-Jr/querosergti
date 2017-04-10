@@ -20,6 +20,7 @@ module QueroSerGTi
     config.time_zone = 'America/Fortaleza'
 
     config.i18n.default_locale = :'pt-BR'
+    config.active_record.default_timezone = :local
 
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
